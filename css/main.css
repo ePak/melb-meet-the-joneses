@@ -179,6 +179,8 @@ body {
   background-color: whitesmoke;
   font-family: 'droid_sansregular', sans-serif;
   font-size: 14px;
+  letter-spacing: 1px;
+  text-rendering: optimizeSpeed;
 }
 
 header {
@@ -193,10 +195,15 @@ header .social {
 
 header .social a {
   color: #FF6E00;
+  line-height: 85px;
+  margin: 0 0.5em;
 }
 
 header a img {
-  max-height: 70px;
+  max-height: 75px;
+  -moz-transition: all 284ms ease-in 0s;
+  -webkit-transition: all 284ms ease-in 0s;
+  transition: all 284ms ease-in 0s;
 }
 
 main {
@@ -213,6 +220,7 @@ main .introduction .video {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 100%;
+  display: block;
   height: 100px;
   text-indent: -9999px;
   max-width: 100%;
@@ -220,12 +228,13 @@ main .introduction .video {
 
 main .introduction p {
   color: #FF6E00;
+  font-size: 1.1em;
   margin: 0 0 0.5em 0;
   text-align: justify;
 }
 
-main .introduction iframe {
-  display: none;
+main .introduction #videoheader {
+  /*display: none;*/
 }
 
 footer {
@@ -245,7 +254,6 @@ footer .partners-row img {
 }
 
 main #mnj{
-    display:none;
     width: 100%;
     height: 100%;
     z-index:1000;

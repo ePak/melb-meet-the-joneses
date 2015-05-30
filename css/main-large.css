@@ -1,18 +1,15 @@
 /* Styles for desktops */
 @media only screen and (min-width: 71.25em) {
-    header {
-        margin-bottom: 1em;
-    }
-
-    footer {
-
-    }
 
     header a img {
         max-height: 150px;
     }
 
-    footer, main {
+    header .social a {
+        line-height: 160px;
+    }
+
+    header .full-header, footer, main {
       margin: 0 auto;
       width: 1140px;
     }
