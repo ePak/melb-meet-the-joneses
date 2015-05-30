@@ -79,14 +79,18 @@ textarea {
 }
 
 .categories {
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 .category {
+  background-color: whitesmoke;
   display: inline-block;
-  height: 5rem;
-  width: 5rem;
+  height: 5em;
+  margin: 0.1em;
   position: relative;
-  margin: 0.5rem;
+  vertical-align: middle;
+  width: 31%;
 }
 
 .category > input[type="checkbox"] {
@@ -139,32 +143,33 @@ textarea {
 header {
   background-color: #f5f5f5;
   border-bottom: 2px solid #f5f5f5;
+  margin-bottom: 1em;
 }
 
 header a img {
   max-height: 70px;
 }
 
-header, main {
+main {
   margin: 0 auto;
   width: 100%;
 }
 
 main .introduction {
+  margin-bottom: 1em;
 }
 
-main .introduction img {
-  max-width: 100px;
+main .introduction .video {
+  background-image: url('/img/video.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 80px;
+  text-indent: -9999px;
+  max-width: 100%;
 }
 
 main .introduction p {
   margin: 0 10px;
-  max-width: 65%;
-}
-
-main .introduction img,
-main .introduction p {
-  float: left;
 }
 
 
