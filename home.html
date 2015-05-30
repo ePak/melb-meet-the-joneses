@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="no-js">
     <head>
         <meta charset="utf-8">
@@ -49,6 +49,7 @@
         <link rel="stylesheet" href="css/font-awesome.css">
 
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
 
@@ -62,9 +63,16 @@
         </header>
 
         <main>
+
             <div id="introduction" class="introduction clearfix">
                 <p class="video">Click to play video</p>
-                <iframe></iframe>
+                <div class="example">
+                    <a href="" onclick="goFullscreen('mnj'); return false"><img src="img/video.png" id="player" /></a>
+                </div>
+                <div id="videoheader">
+                    <a id="videoclose">X</a>
+                    <iframe id="mnj" src="https://player.vimeo.com/video/124596656" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
                 <p class="description">Living like the new Joneses. The new Joneses do more with less. Thinking where stuff comes from and where it goes, they maximize resources and minimise waste. They buy experiences over stuff. Living it up, not 'keeping up', the new Joneses are here to stay.</p>
             </div>
 
