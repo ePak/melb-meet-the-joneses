@@ -70,57 +70,57 @@ textarea {
 }
 
 .form-field {
-  margin: 0.5rem;
-}
-
-.flexcontainer {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
+  margin: 1rem 0.5rem;
 }
 
 #interestForm {
   display: inline-block;
-  width: 35rem;
   padding: 0.5rem;
 }
 
 .categories {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
 }
 
 .category {
   display: inline-block;
-  height: 10rem;
-  width: 10rem;
+  height: 5rem;
+  width: 5rem;
   position: relative;
   margin: 0.5rem;
 }
 
 .category > input[type="checkbox"] {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 .category > label {
-  background-color: lightblue;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  background-color: lightgrey;
+  border-radius: 0.5rem;
+  display: table;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.category-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .category > input[type="checkbox"]:checked ~ label {
-  background-color: lightgreen;
+  background-color: #FF6E00;
+  color: white;
 }
 
 #interestForm  #email {
   width: 100%;
+  height: 3rem;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgrey;
+  font-size: 1.2rem;
 }
 
 #interestForm .form-field-submit {
@@ -129,10 +129,11 @@ textarea {
 
 #interestForm input[type="submit"] {
   width: 10rem;
-  height: 2rem;
+  height: 3rem;
   border: 0;
   border-radius: 0.5rem;
   background-color: #FF6E00;
+  color: white;
 }
 
 header {
