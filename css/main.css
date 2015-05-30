@@ -65,6 +65,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+    font-family: 'droid_sansbold';
+    src: url('../fonts/DroidSans-Bold-webfont.eot');
+    src: url('../fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSans-Bold-webfont.svg#droid_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('../fonts/DroidSans-webfont.eot');
+    src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSans-webfont.woff') format('woff'),
+         url('../fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -86,11 +111,21 @@ textarea {
 .category {
   background-color: whitesmoke;
   display: inline-block;
-  height: 5em;
-  margin: 0.1em;
-  position: relative;
+  height: 80px;
+  margin: 0 0.25em;
+  max-width: 30%;
   vertical-align: middle;
-  width: 31%;
+  width: 100%;
+}
+
+.categories .category a {
+  position: relative;
+  top: 50%;
+  text-decoration: none;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 .category > input[type="checkbox"] {
@@ -140,10 +175,16 @@ textarea {
   color: white;
 }
 
+body {
+  background-color: whitesmoke;
+  font-family: 'droid_sansregular', sans-serif;
+  font-size: 14px;
+}
+
 header {
-  background-color: #f5f5f5;
-  border-bottom: 2px solid #f5f5f5;
-  margin-bottom: 1em;
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 0.5em;
 }
 
 header a img {
@@ -151,8 +192,8 @@ header a img {
 }
 
 main {
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 0.5em;
+  max-width: 100%;
 }
 
 main .introduction {
@@ -163,15 +204,36 @@ main .introduction .video {
   background-image: url('/img/video.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  height: 80px;
+  background-size: 100%;
+  height: 100px;
   text-indent: -9999px;
   max-width: 100%;
 }
 
 main .introduction p {
-  margin: 0 10px;
+  color: #FF6E00;
+  margin: 0 0 0.5em 0;
+  text-align: justify;
 }
 
+main .introduction iframe {
+  display: none;
+}
+
+footer {
+  margin: 0 0.5em;
+  text-align: center;
+}
+
+footer p {
+  color: #00AEEF;
+  font-family: 'droid_sansbold';
+}
+
+footer .partners-row img {
+  margin: 0.5em;
+  max-width: 18%;
+}
 
 /* ==========================================================================
    Helper classes
