@@ -245,6 +245,7 @@ footer {
 footer p {
   color: #00AEEF;
   font-family: 'droid_sansbold';
+  text-transform: uppercase;
 }
 
 

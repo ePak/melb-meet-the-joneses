@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="no-js">
     <head>
         <meta charset="utf-8">
@@ -44,59 +44,87 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main-medium.css">
+        <link rel="stylesheet" href="css/main-large.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
 
-        <!-- Add your site or application content here -->
-        <form id="interestForm" action="">
-          <div class="categories">
-            <div class="category">
-              <input id="shop" type="checkbox" >
-              <label for="shop">
-                <div class="category-text">Shop Better</div>
-              </label>
+        <header>
+            <div class="full-header">
+                <a href="#"><img src="img/tnj-logo.png"></a>
+                <div class="social">
+                  <a target="_blank" href="https://www.facebook.com/TheNewJoneses"><i class="fa fa-2x fa-facebook-square"></i></a>
+                  <a target="_blank" href="https://twitter.com/TheNewJoneses"><i class="fa fa-2x fa-twitter-square"></i></a>
+                  <a target="_blank" href="http://instagram.com/the_new_joneses/"><i class="fa fa-2x fa-instagram"></i></a>
+                </div>
             </div>
-            <div class="category">
-              <input id="move" type="checkbox" >
-              <label for="move">
-                <div class="category-text">Move Better</div>
-              </label>
+        </header>
+
+        <main>
+
+            <div id="introduction" class="introduction clearfix">
+                <div id="videoheader">
+                    <a id="videoclose">X</a>
+                    <iframe id="mnj" src="https://player.vimeo.com/video/124596656" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <p class="description">Living like the new Joneses. The new Joneses do more with less. Thinking where stuff comes from and where it goes, they maximize resources and minimise waste. They buy experiences over stuff. Living it up, not 'keeping up', the new Joneses are here to stay.</p>
             </div>
-            <div class="category">
-              <input id="eat" type="checkbox" >
-              <label for="eat">
-                <div class="category-text">Eat Better</div>
-              </label>
+
+            <div class="categories clearfix">
+                <div class="category">
+                    <a href="shop_better.html">Shop better</a>
+                </div>
+                <div class="category">
+                    <a href="move_better.html">Move better</a>
+                </div>
+                <div class="category">
+                    <a href="eat_better.html">Eat better</a>
+                </div>
             </div>
-          </div>
-          <div class="categories">
-            <div class="category">
-              <input id="power" type="checkbox" >
-              <label for="power">
-                <div class="category-text">Power Up Better</div>
-              </label>
+            <div class="categories clearfix">
+                <div class="category">
+                    <a href="power_up.html">Power up better</a>
+                </div>
+                <div class="category">
+                    <a href="play_more.html">Play more</a>
+                </div>
+                <div class="category">
+                    <a href="waste_less.html">Waste less</a>
+                </div>
             </div>
-            <div class="category">
-              <input id="play" type="checkbox" >
-              <label for="play">
-                <div class="category-text">Play More</div>
-              </label>
+        </main>
+
+        <footer>
+            <p>We get by with a little help from our friends</p>
+            <div class="partners-row">
+                <img src="img/partners/2015-logo-A-01.png">
+                <img src="img/partners/2015-logo-A-02.png">
+                <img src="img/partners/2015-logo-A-03.png">
+                <img src="img/partners/2015-logo-A-05.png">
             </div>
-            <div class="category">
-              <input id="waste" type="checkbox" >
-              <label for="waste">
-                <div class="category-text">Waste Less</div>
-              </label>
+            <div class="partners-row">
+                <img src="img/partners/2015-logo-B-01.png">
+                <img src="img/partners/2015-logo-B-02.png">
+                <img src="img/partners/2015-logo-B-04.png">
+                <img src="img/partners/2015-logo-B-05.png">
             </div>
-          </div>
-          <div class="form-field">
-            <input id="email" type="text" placeholder="tamara@thenewjoneses.com">
-          </div>
-          <div class="form-field form-field-submit">
-            <input type="submit" value="Go">
-          </div>
-        </form>
+            <div class="partners-row">
+                <img src="img/partners/2015-logo-B-06.png">
+                <img src="img/partners/2015-logo-C-01.png">
+                <img src="img/partners/2015-logo-C-02.png">
+                <img src="img/partners/2015-logo-C-03.png">
+            </div>
+            <div class="partners-row">
+                <img src="img/partners/2015-logo-C-05.png">
+                <img src="img/partners/2015-logo-D-01.png">
+                <img src="img/partners/2015-logo-D-02.png">
+                <img src="img/partners/2015-logo-D-05.png">
+            </div>
+        </footer>
 
         <script src="js/vendor/jquery-2.1.0.min.js"></script>
         <script src="js/helper.js"></script>

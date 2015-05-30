@@ -13,4 +13,8 @@
       margin: 0 auto;
       width: 1140px;
     }
+
+    main .introduction .description {
+        max-width: 43%;
+    }
 }
