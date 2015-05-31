@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+body { margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size:12px; color:#FF6E00; background-color:#f5f5f5; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust: none; }
+
+@font-face {
+    font-family: 'tnj_light';
+    src: url('../fonts/tnj-light-webfont.eot');
+    src: url('../fonts/tnj-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tnj-light-webfont.woff') format('woff'),
+         url('../fonts/tnj-light-webfont.ttf') format('truetype'),
+         url('../fonts/tnj-light-webfont.svg#tnj_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tnj_medium';
+    src: url('../fonts/tnj-medium-webfont.eot');
+    src: url('../fonts/tnj-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tnj-medium-webfont.woff') format('woff'),
+         url('../fonts/tnj-medium-webfont.ttf') format('truetype'),
+         url('../fonts/tnj-medium-webfont.svg#tnj_medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tnj_regular';
+    src: url('../fonts/tnj_regular-webfont.eot');
+    src: url('../fonts/tnj_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tnj_regular-webfont.woff') format('woff'),
+         url('../fonts/tnj_regular-webfont.ttf') format('truetype'),
+         url('../fonts/tnj_regular-webfont.svg#tnj_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tnj_bold';
+    src: url('../fonts/tnj-bold-webfont.eot');
+    src: url('../fonts/tnj-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tnj-bold-webfont.woff') format('woff'),
+         url('../fonts/tnj-bold-webfont.ttf') format('truetype'),
+         url('../fonts/tnj-bold-webfont.svg#tnj_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {	font-family:'tnj_light'; font-size: 12px; color: #FF6E00; outline: 0; text-decoration:underline; }
+a:visited { font-family:'tnj_light'; font-size: 12px; color: #FF6E00; outline: 0; text-decoration:underline; }
+a:hover { font-family:'tnj_light'; font-size: 12px; color: #999999;	outline: 0; text-decoration:none; }
+a:active { font-family:'tnj_light'; font-size: 12px;	color: #FF6E00; outline: 0; text-decoration:underline; }
+
+img, object, embed, video { /*max-width: 100%;*/ outline: 0; }
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img { /*width:100%;*/	outline: 0; }
+
+.blackcopy11l {  font-family:'tnj_light'; font-size:11px; color:#666666; text-decoration:none; outline: 0; }
+
+.orangecopy12l {  font-family:'tnj_light'; font-size:12px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+.orangecopy14m {  font-family:'tnj_medium'; font-size:14px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+.orangecopy16r {  font-family:'tnj_regular'; font-size:16px; color:#FF6E00; text-decoration:none; outline: 0; }
+.orangecopy16m {  font-family:'tnj_medium'; font-size:16px; color:#FF6E00; text-decoration:none; outline: 0; }
+.orangecopy16b {  font-family:'tnj_bold'; font-size:16px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+.orangecopy18m {  font-family:'tnj_medium'; font-size:18px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+.orangelink18m {  font-family:'tnj_medium'; font-size:18px; color:#FF6E00; text-decoration:none; outline: 0; }
+a.orangelink18m:link { font-family:'tnj_medium';  font-size:18px;  color:#FF6E00; text-decoration:none; outline: 0; }
+a.orangelink18m:visited {  font-family:'tnj_medium'; font-size:18px; color: #FF6E00; text-decoration:none; outline: 0; }
+a.orangelink18m:hover {  font-family:'tnj_medium'; font-size:18px; color:#999999;	text-decoration:none; outline: 0; }
+a.orangelink18m:active {  font-family:'tnj_medium'; font-size:18px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+
+
+.orangecopy18b {  font-family:'tnj_bold'; font-size:18px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+.orangecopy19m {  font-family:'tnj_medium'; font-size:19px; color:#FF6E00; text-decoration:none; outline: 0; }
+.orangecopy19b {  font-family:'tnj_bold'; font-size:19px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+.orangecopy20m {  font-family:'tnj_medium'; font-size:20px; color:#FF6E00; text-decoration:none; outline: 0; }
+.orangecopy20b {  font-family:'tnj_bold'; font-size:20px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+.orangelinks12l {  font-family:'tnj_light'; font-size:12px;  color:#FF6E00; text-decoration:underline; outline: 0; }
+a.orangelinks12l:link { font-family:'tnj_light';  font-size:12px;  color:#FF6E00; text-decoration:underline; outline: 0; }
+a.orangelinks12l:visited {  font-family:'tnj_light'; font-size:12px; color: #FF6E00; text-decoration:underline; outline: 0; }
+a.orangelinks12l:hover {  font-family:'tnj_light'; font-size:12px; color:#999999;	text-decoration:none; outline: 0; }
+a.orangelinks12l:active {  font-family:'tnj_light'; font-size:12px; color:#FF6E00; text-decoration:underline; outline: 0; }
+
+.orangelinks12r {  font-family:'tnj_regular'; font-size:12px;  color:#FF6E00; text-decoration:none; outline: 0; }
+a.orangelinks12r:link { font-family:'tnj_regular';  font-size:12px;  color:#FF6E00; text-decoration:none; outline: 0; }
+a.orangelinks12r:visited {  font-family:'tnj_regular'; font-size:12px; color: #FF6E00; text-decoration:none; outline: 0; }
+a.orangelinks12r:hover {  font-family:'tnj_regular'; font-size:12px; color:#999999;	text-decoration:underline; outline: 0; }
+a.orangelinks12r:active {  font-family:'tnj_regular'; font-size:12px; color:#FF6E00; text-decoration:none; outline: 0; }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2%;
+}
+
+.quotes {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;  
+  border-radius: 5px;
+  border: none;
+  overflow: auto;
+	z-index:10;
+	padding:10px;
+	background-color:#FFFFFF;
+	word-break: normal;
+  white-space: normal;
+	xdisplay: inline-block;
+  xwidth: 30%;
+  xmargin: 1.5%;
+}
+
+/*
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  margin: 1rem 0;
+}
+
+.video > iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  display: inline-block;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  margin-left: 2%;
+  margin-right: 1.5%;
+  background-image: url("./tnj-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-right {
+  vertical-align: top;
+  display: inline-block;
+  width: 63%;
+  margin: 1% 1.5% 1% 1%;
+}
+
+.header .text {
+  text-align: justify;
+}
+
+.social_icons {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.social_icons > * {
+  margin-right: 0.3rem;
+  vertical-align: top;
+}
+
+
+.masonry:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer, .quotes {
+  width: 49%;
+}
+
+.gutter-sizer {
+  width: 2%;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+.ratio {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+}
+
+.ratio > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  width: 100%;
+  padding-bottom: 50%;
+}
+
+.slideshow,
+.image1,
+.image2 {
+  width: 49%;
+  padding-bottom: 49%;
+}
+
+.image1 {
+  padding-bottom: 33%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+  .logo {
+    width: 20%;
+    padding-bottom: 20%;
+  }
+  .header-right {
+    width: 73%;
+  }
+  .grid-sizer,
+  .quotes,
+  .image2 {
+    width: 32%;
+  }
+  .video,
+  .slideshow,
+  .image1 {
+    width: 66%;
+    padding-bottom: 66%;
+  }
+
+  .image2 {
+    padding-bottom: 32%
+  }
+
+  .video {
+    padding-bottom: 33%;
+  }
+
+  .image1 {
+    padding-bottom: 44%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .main {
+    width: 1140px;
+    margin: auto;
+  }
+  .header-right {
+    width: 77%
+  }
+  .logo {
+    width: 10%;
+    padding-bottom: 10%;
+    margin: 0 5%;
+  }
+  .header .text {
+    width: 70%;
+  }
+  .social_icons {
+    float: right;
+    width: 25%;
+  }
+  .grid-sizer, .quotes {
+    width: 19%;
+  }
+  .gutter-sizer {
+    width: 1%;
+  }
+  .video {
+    width: 59%;
+    padding-bottom: 29.5%;
+  }
+  .slideshow,
+  .image1,
+  .image2 {
+    width: 39%;
+    padding-bottom: 39%;
+  }
+  .image1 {
+    padding-bottom: 26%;
+  }
+
+  
+
+}
