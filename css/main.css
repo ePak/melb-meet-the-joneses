@@ -25,6 +25,7 @@ body {
 
 a {
     color: #00e;
+    display: block;
 }
 
 a:visited {
